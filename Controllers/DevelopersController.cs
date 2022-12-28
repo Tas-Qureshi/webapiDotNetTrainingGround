@@ -60,6 +60,20 @@ public class DevelopersController : ControllerBase
         return CreatedAtAction(nameof(GetDeveloperById), new { id = nextId }, newDev);
     }
 
+    //if(ModelState.IsValid){}
+    //DELETE API ENDPOINT
+
+    // [HttpDelete("{id}")]
+    // //[Route("{id}")]
+    // public IActionResult DeleteDeveloper(int id)
+    // {
+    //     var developer = _db.Developers.Find(d => d.Id == id);
+    //     _db.Developers.Remove(developer);
+    //     return Ok();
+    // }
+
+
+
     //[HttpGet("id/address/Name/email")]
     //[HttpGet("{id}/address/{addressId}/{street}")]//
     //public Developer? GetData(int id, string name, string emaail)
